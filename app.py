@@ -21,6 +21,7 @@ dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.mi
 # app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO, dbc.icons.BOOTSTRAP, dbc_css])
 
 app = dash.Dash(
+    __name__, 
     prevent_initial_callbacks=True,
     external_stylesheets=[dbc.themes.SUPERHERO, dbc.icons.BOOTSTRAP, dbc_css],
     meta_tags=[{'name': 'viewport',
