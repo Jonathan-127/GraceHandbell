@@ -228,7 +228,7 @@ prf_card2 = html.Div(
                         dbc.Card(
                             [
                                 # dbc.CardBody(html.P("This has a bottom image", className="card-text")),
-                                dbc.CardImg(src='/assets/8.JPG', bottom=True),
+                                dbc.CardImg(src='/assets/8.jpg', bottom=True),
                             ],
                         )
                     ] 
@@ -345,7 +345,7 @@ hdb_card = html.Div(
                     [
                         dbc.Card(
                             [
-                                dbc.CardImg(src='/assets/7.JPG', bottom=True),
+                                dbc.CardImg(src='/assets/7.jpg', bottom=True),
                             ],
                         )
                     ] 
