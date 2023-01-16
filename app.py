@@ -16,10 +16,6 @@ import dash_bootstrap_components as dbc
 from dash import Input, Output, State, html
 from dash_bootstrap_components._components.Container import Container
 
-
-
-
-
 PLOTLY_LOGO = "https://images.plot.ly/logo/new-branding/plotly-logomark.png"
 
 # stylesheet with the .dbc class
@@ -99,7 +95,7 @@ navbar = dbc.Navbar(
                 # Use row and col to control vertical alignment of logo / brand
                 dbc.Row(
                     [
-                        dbc.Col(html.Img(src=app.get_asset_url('logo.png'), height="30px")),
+                        dbc.Col(html.Img(src='./assets/logo.png', height="30px")),
                         dbc.Col(dbc.NavbarBrand("교회 핸드벨 사역원", className="ms-2")),
                     ],
                     align="center",
@@ -149,7 +145,7 @@ abt_card = html.Div(
                     [
                         dbc.Card(
                             [
-                                dbc.CardImg(src=app.get_asset_url('3.jpg'), bottom=True),
+                                dbc.CardImg(src='./assets/3.jpg', bottom=True),
                             ],
                         )
                     ] 
@@ -214,7 +210,7 @@ prf_card = html.Div(
                         dbc.Card(
                             [
                                 # dbc.CardBody(html.P("This has a bottom image", className="card-text")),
-                                dbc.CardImg(src=app.get_asset_url('5.jpg'), bottom=True),
+                                dbc.CardImg(src='./assets/5.jpg', bottom=True),
                             ],
                         )
                     ] 
@@ -233,7 +229,7 @@ prf_card2 = html.Div(
                         dbc.Card(
                             [
                                 # dbc.CardBody(html.P("This has a bottom image", className="card-text")),
-                                dbc.CardImg(src=app.get_asset_url('8.jpg'), bottom=True),
+                                dbc.CardImg(src='./assets/8.jpg', bottom=True),
                             ],
                         )
                     ] 
@@ -350,7 +346,7 @@ hdb_card = html.Div(
                     [
                         dbc.Card(
                             [
-                                dbc.CardImg(src=app.get_asset_url('7.jpg'), bottom=True),
+                                dbc.CardImg(src='./assets/7.jpg', bottom=True),
                             ],
                         )
                     ] 
